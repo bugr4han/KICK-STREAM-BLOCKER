@@ -1,0 +1,22 @@
+{
+  "name": "KICK STREAM BLOCKER",
+  "description": "Kick.com üzerindeki istenmeyen yayınları gizler.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["scripting", "activeTab", "storage", "tabs"],
+  "icons": {
+    "128": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Kick Blocker",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://kick.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
