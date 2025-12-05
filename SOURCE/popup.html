@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kick Stream Blocker</title>
+    <link rel="stylesheet" href="popup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>KICK STREAM BLOCKER</h2>
+      <h2 style="font-size: small">Easily Block Unwanted Streams!</h2>
+      <label class="switch">
+        <input type="checkbox" id="toggleEnabled" />
+        <span class="slider"></span>
+      </label>
+
+      <h4 style="margin-top: 18px">Block by Category</h4>
+      <div class="row">
+        <select id="categorySelect">
+          <option value="">Select Category...</option>
+          <option value="knight online">Knight Online</option>
+          <option>League of Legends</option>
+          <option>Teamfight Tactics</option>
+          <option>Grand Theft Auto V</option>
+          <option>Counter-Strike 2</option>
+          <option>VALORANT</option>
+          <option>Minecraft</option>
+          <option>Just Chatting</option>
+          <option>IRL</option>
+          <option>Just Sleeping</option>
+          <option>Watch Party</option>
+          <option>Dota 2</option>
+          <option>PUBG Mobile</option>
+          <option>PUBG: Battlegrounds</option>
+          <option>Roblox</option>
+          <option>Call of Duty: Warzone</option>
+          <option>Marvel Rivals</option>
+          <option>Fortnite</option>
+          <option>World of Warcraft</option>
+          <option>Games + Demos</option>
+        </select>
+        <button id="addCategory">Add</button>
+      </div>
+
+      <ul id="categoryList"></ul>
+
+      <h4>Block by Stream Title</h4>
+      <div class="row">
+        <input type="text" id="customInput" placeholder="Add new word..." />
+        <button id="addInput">Add</button>
+      </div>
+      <ul id="inputList"></ul>
+
+      <h4>Block by Streamer</h4>
+      <div class="row">
+        <input
+          type="text"
+          id="customPublisher"
+          placeholder="Enter streamer name..."
+        />
+        <button id="addPublisher">Add</button>
+      </div>
+      <ul id="publisherList"></ul>
+
+      <p
+        style="
+          margin-top: 16px;
+          font-size: 12px;
+          text-align: center;
+          color: #bbb;
+        "
+      >
+        <span id="developer"
+          >Developer:
+          <a href="https://github.com/bugr4han" target="_blank">GITHUB</a></span
+        >
+      </p>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
